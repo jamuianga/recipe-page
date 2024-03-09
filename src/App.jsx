@@ -2,8 +2,8 @@ import omeleteImg from "./assets/images/image-omelette.jpeg";
 
 function App() {
   return (
-    <>
-      <img src={omeleteImg} alt="Omelette" />
+    <div className="App">
+      <img src={omeleteImg} alt="Omelette" className="banner"/>
 
       <h1>Simple Omelette Recipe</h1>
 
@@ -13,7 +13,7 @@ function App() {
         choice of cheese, vegetables, or meats.
       </p>
 
-      <div>
+      <div className="prep-time">
         <h2>Preparation time</h2>
         <ul>
           <li>
@@ -90,24 +90,24 @@ function App() {
           <tbody>
             <tr>
               <td>Calories</td>
-              <th>277kcal</th>
+              <td>277kcal</td>
             </tr>
             <tr>
               <td>Carbs</td>
-              <th>0g</th>
+              <td>0g</td>
             </tr>
             <tr>
               <td>Protein</td>
-              <th>20g</th>
+              <td>20g</td>
             </tr>
             <tr>
               <td>Fat</td>
-              <th>22g</th>
+              <td>22g</td>
             </tr>
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 }
 
